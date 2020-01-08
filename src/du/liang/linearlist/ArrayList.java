@@ -9,12 +9,15 @@ public class ArrayList {
     private int[] elements;
     private static final int DEFAULT_CAPACITY = 10;
     private static final int ELEMENT_NOT_FOUND= -1;
+    private  int capacity;
 
     public ArrayList(int capacity) {
         if(capacity<DEFAULT_CAPACITY){
             capacity=DEFAULT_CAPACITY;
         }
         elements=new int[capacity];
+        this.capacity=DEFAULT_CAPACITY;
+
     }
 
     public ArrayList() {
@@ -63,12 +66,8 @@ public class ArrayList {
      * @param element
      */
     public void add(int element) {
-        if(size<DEFAULT_CAPACITY){
-            elements[size++]=element;
-        }else {
-            size+=DEFAULT_CAPACITY;
-            elements = new int[size];
-        }
+        add(size,element);
+
     }
 
     /**
@@ -77,14 +76,33 @@ public class ArrayList {
      * @param element
      */
     public void add(int index, int element) {
+        RangeChakeforAdd(index);
+        if(size<capacity){
+            for (int i = size; i >index; i--) {
+                elements[i]=elements[i-1];
+            }
+            elements[index]=element;
+            size++;
+        }else {
+            capacity+=DEFAULT_CAPACITY;
+            int[] oldArray=elements;
+            elements = new int[capacity];
+            for (int i = 0; i < oldArray.length; i++) {
+                elements[i]=oldArray[i];
+            }
+            add(index,element);
+
+        }
+
+    }
+    /**
+    * 检查索引是否合法
+    *
+    * */
+    private void RangeChakeforAdd(int index){
         if(index<0||index>size){
             throw new IndexOutOfBoundsException("index:"+index+" size:"+size);
         }
-        for (int i = size; i >index; i--) {
-            elements[i]=elements[i-1];
-        }
-        elements[index]=element;
-        size++;
     }
 
     /**
