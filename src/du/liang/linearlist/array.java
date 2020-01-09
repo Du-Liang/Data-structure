@@ -4,6 +4,7 @@ import du.liang.tools.Asserts;
 
 public class array {
     public static void main(String[] args) {
+        java.util.ArrayList tr = new java.util.ArrayList<Integer>(-1);
         ArrayList my_a =new ArrayList();
 //        System.out.println(my_a.size());
 //        my_a.add(999);
