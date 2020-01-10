@@ -1,7 +1,7 @@
 package du.liang.LinkedList;
 
 public abstract class AbstractList <E> implements List<E>{
-    protected int size;
+    protected int size=0;
 
     protected void rangeCheck(int index){
         if(index>size){

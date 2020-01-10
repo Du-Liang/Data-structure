@@ -61,6 +61,7 @@ public class LinkedList<E>  extends AbstractList<E>{
      */
     @Override
     public void add(E element) {
+        System.out.println("In add() size is:"+size);
         add(size,element);
 
     }
