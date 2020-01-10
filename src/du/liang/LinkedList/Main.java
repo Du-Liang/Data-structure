@@ -15,6 +15,7 @@ public class Main {
         list.add(0,10);
         list.add(30);
         list.add(list.size(),40);
+        list.remove(1);
         System.out.println(list);
     }
 }

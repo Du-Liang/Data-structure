@@ -10,6 +10,7 @@ public class LinkedList<E>  extends AbstractList<E>{
         public Node(E elementE, Node next) {
             this.elementE = elementE;
             this.next = next;
+
         }
     }
 
@@ -61,7 +62,7 @@ public class LinkedList<E>  extends AbstractList<E>{
      */
     @Override
     public void add(E element) {
-        System.out.println("In add() size is:"+size);
+
         add(size,element);
 
     }
@@ -100,6 +101,7 @@ public class LinkedList<E>  extends AbstractList<E>{
      */
     @Override
     public void add(int index, E element) {
+
         if (index==0){
 
             Node node= new Node<E>(element,firstNode);
