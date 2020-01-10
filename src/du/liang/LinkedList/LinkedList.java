@@ -1,8 +1,8 @@
 package du.liang.LinkedList;
 
-public class LinkedList<E> implements List<E>{
-    private int size;
-    private Node<E> firstNode;
+public class LinkedList<E>  extends AbstractList<E>{
+
+    private Node firstNode;
     private static class Node<E>{
         E elementE;
         Node next;
@@ -18,6 +18,8 @@ public class LinkedList<E> implements List<E>{
      */
     @Override
     public void clear() {
+        size=0;
+        firstNode = null;
 
     }
 
@@ -58,7 +60,8 @@ public class LinkedList<E> implements List<E>{
      * @param element
      */
     @Override
-    public void add(Object element) {
+    public void add(E element) {
+        add(size,element);
 
     }
 
@@ -69,8 +72,8 @@ public class LinkedList<E> implements List<E>{
      * @return
      */
     @Override
-    public Object get(int index) {
-        return null;
+    public E get(int index) {
+        return findNode(index).elementE;
     }
 
     /**
@@ -81,8 +84,11 @@ public class LinkedList<E> implements List<E>{
      * @return 原来的元素ֵ
      */
     @Override
-    public Object set(int index, Object element) {
-        return null;
+    public E set(int index, E element) {
+        Node<E> old,node=findNode(index);
+        old=node;
+        node.elementE=element;
+        return old.elementE;
     }
 
     /**
@@ -92,8 +98,36 @@ public class LinkedList<E> implements List<E>{
      * @param element
      */
     @Override
-    public void add(int index, Object element) {
+    public void add(int index, E element) {
+        if (index==0){
 
+            Node node= new Node<E>(element,firstNode);
+            firstNode=node;
+        }else {
+
+            Node<E> previous= findNode(index-1);
+
+
+            previous.next=new Node<E>(element,previous.next);
+
+        }
+
+
+        size++;
+    }
+
+    //找到index位置所对应的节点
+    private Node<E> findNode(int index){
+        rangeCheck(index);
+        Node presentNode=firstNode;
+        int n=0;
+        while (n<index){
+            if(presentNode.next!=null){
+                presentNode=presentNode.next;
+            }
+            n++;
+        }
+        return presentNode;
     }
 
     /**
@@ -103,8 +137,19 @@ public class LinkedList<E> implements List<E>{
      * @return
      */
     @Override
-    public Object remove(int index) {
-        return null;
+    public E remove(int index) {
+        Node<E> old=firstNode;
+        if(index==0){
+
+            firstNode=firstNode.next;
+        }else {
+            Node prev=findNode(index-1);
+            old =prev.next;
+            prev.next=prev.next.next;
+
+        }
+        size--;
+        return old.elementE;
     }
 
     /**
@@ -115,6 +160,48 @@ public class LinkedList<E> implements List<E>{
      */
     @Override
     public int indexOf(Object element) {
-        return 0;
+        int indexOfElement=ELEMENT_NOT_FOUND;
+        int i=0;
+        Node<E> node=firstNode;
+        if(element==null){
+            while (node!=null){
+                if(node.elementE==null){
+                    indexOfElement=i;
+                    break;
+                }
+                i++;
+                node=node.next;
+            }
+        }else {
+            while (node!=null){
+                if(node.elementE.equals(element)){
+                    indexOfElement=i;
+                    break;
+                }
+                i++;
+                node=node.next;
+            }
+        }
+
+        return indexOfElement;
+
     }
+    @Override
+    public String toString() {
+        StringBuilder str=new StringBuilder();
+        str.append("size="+size+" [");
+        Node<E> node=firstNode;
+
+        for (int i = 0; i < size; i++) {
+            if(i!=0){
+                str.append(",");
+            }
+            str.append(node.elementE);
+            node=node.next;
+
+        }
+        str.append("]");
+        return str.toString() ;
+    }
+
 }

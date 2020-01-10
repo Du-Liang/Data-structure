@@ -2,7 +2,7 @@ package du.liang.linearlist;
 
 import java.util.Arrays;
 
-public class ArrayList {
+public class ArrayList  {
     //元素的数量
     private int size;
     //所有元素
