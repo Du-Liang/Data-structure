@@ -3,7 +3,7 @@ package du.liang.LinkedList;
 public class LinkedList<E>  extends AbstractList<E> {
 
     private Node<E> firstNode;
-    private Node<E> last;
+    private Node<E> lastNode;
     private static class Node<E>{
         E elementE;
         Node<E> prev;
@@ -15,6 +15,23 @@ public class LinkedList<E>  extends AbstractList<E> {
             this.next = next;
 
         }
+
+        @Override
+        public String toString() {
+            StringBuilder sb = new StringBuilder();
+            if(prev!=null){
+                sb.append(prev.elementE);
+            }else {
+                sb.append("null");
+            }
+            sb.append("_").append(elementE).append("_");
+            if(next!=null){
+                sb.append(next.elementE);
+            }else {
+                sb.append("null");
+            }
+            return sb.toString();
+        }
     }
 
     /**
@@ -24,6 +41,7 @@ public class LinkedList<E>  extends AbstractList<E> {
     public void clear() {
         size=0;
         firstNode = null;
+        lastNode = null;
 
     }
 
@@ -104,35 +122,57 @@ public class LinkedList<E>  extends AbstractList<E> {
      */
     @Override
     public void add(int index, E element) {
+        rangeCheckForAdd(index);
+        if(index==size){
+            Node oldlast=lastNode;
+            lastNode=new Node<>(element,lastNode,null);
+            if(oldlast==null){
+                firstNode=lastNode;
 
-        if (index==0){
+            }else{
+                oldlast.next=lastNode;
+            }
 
-            Node node= new Node<E>(element,firstNode);
-            firstNode=node;
         }else {
+            Node<E> NextNode= findNode(index);
+            Node<E> PrevNode=NextNode.prev;
+            Node<E> NewNode=new Node<>(element,PrevNode,NextNode);
+            NextNode.prev=NewNode;
 
-            Node<E> previous= findNode(index-1);
-
-
-            previous.next=new Node<E>(element,previous.next);
-
+            if (PrevNode==null){
+                firstNode=NewNode;
+            }else {
+                PrevNode.next=NextNode;
+            }
         }
-
-
         size++;
     }
 
     //找到index位置所对应的节点
     private Node<E> findNode(int index){
-        rangeCheck(index);
-        Node presentNode=firstNode;
-        int n=0;
-        while (n<index){
-            if(presentNode.next!=null){
-                presentNode=presentNode.next;
+        rangeCheckForAdd(index);
+        Node presentNode;
+        if(index<(size>>1)){
+            int n=0;
+            presentNode=firstNode;
+            while (n<index){
+                if(presentNode.next!=null){
+                    presentNode=presentNode.next;
+                }
+                n++;
             }
-            n++;
+        }else {
+            int n=size-1;
+            presentNode=lastNode;
+            while (n>index){
+                if(presentNode.prev!=null){
+                    presentNode=presentNode.prev;
+                }
+                n--;
+            }
+
         }
+
         return presentNode;
     }
 
@@ -144,15 +184,22 @@ public class LinkedList<E>  extends AbstractList<E> {
      */
     @Override
     public E remove(int index) {
-        Node<E> old=firstNode;
-        if(index==0){
+        rangeCheck(index);
+        Node<E> old=findNode(index);
+        Node prev=old.prev;
+        Node next=old.next;
+        if(prev==null){
+            firstNode=next;
 
-            firstNode=firstNode.next;
         }else {
-            Node prev=findNode(index-1);
-            old =prev.next;
-            prev.next=prev.next.next;
+            prev.next=next;
+        }
+        if(next==null){//index==size-1
+            lastNode=prev;
 
+
+        }else {
+            next.prev=prev;
         }
         size--;
         return old.elementE;
@@ -202,9 +249,9 @@ public class LinkedList<E>  extends AbstractList<E> {
             if(i!=0){
                 str.append(",");
             }
-            str.append(node.elementE);
-            str.append(" next=");
-            str.append(node.next);
+            str.append(node);
+//            str.append(" next=");
+//            str.append(node.next);
             node=node.next;
 
         }
