@@ -1,17 +1,16 @@
-package du.liang.LinkedList;
-//双向链表
-public class LinkedList<E>  extends AbstractList<E> {
+package du.liang.LinkedList.singlelist;
 
-    private Node<E> firstNode;
-    private Node<E> last;
+import du.liang.LinkedList.AbstractList;
+
+public class SingleLinkedList<E>  extends AbstractList<E> {
+
+    private Node firstNode;
     private static class Node<E>{
         E elementE;
-        Node<E> prev;
-        Node<E> next;
+        Node next;
 
-        public Node(E elementE, Node<E> prev,Node<E> next) {
+        public Node(E elementE, Node next) {
             this.elementE = elementE;
-            this.prev= prev;
             this.next = next;
 
         }

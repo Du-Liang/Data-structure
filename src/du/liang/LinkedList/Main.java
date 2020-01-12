@@ -1,8 +1,10 @@
 package du.liang.LinkedList;
 
+import du.liang.LinkedList.singlelist.SingleLinkedList;
+
 public class Main {
     public static void main(String[] args) {
-        List<Integer> list=new LinkedList<>();
+        List<Integer> list=new SingleLinkedList<>();
 
 //        for (int i = 0; i < 10; i++) {
 //            list.add(i);
