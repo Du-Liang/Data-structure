@@ -1,20 +1,29 @@
 package du.liang.LinkedList;
 
-
-import du.liang.LinkedList.singlelist.CircleSingleLinkedList;
-
 public class Main {
     public static void main(String[] args) {
-        List<Integer> list=new CircleSingleLinkedList<>();
-
-        java.util.LinkedList<Integer> ty;
-
-        list.add(20);
-
-        list.add(30);
-        list.add(list.size(),40);
+        CircleLinkedList<Integer> list=new CircleLinkedList<>();
+        for (int i = 1; i <=8; i++) {
+            list.add(i);
+        }
         System.out.println(list);
-        list.add(0,999);
-        System.out.println(list);
+        list.reset();
+        //josephus prbolem
+        while (list.size!=0){
+            for (int i = 0; i < 2; i++) {
+                System.out.println("当前是："+list.next());
+
+            }
+            System.out.println("删除了"+list.kill());
+            System.out.println(list );
+
+
+        }
+//        list.add(0,55);
+//        while (list.size!=0){
+//
+//            list.remove(0);
+//        }
+        System.out.println(list );
     }
 }

@@ -1,24 +1,60 @@
-package du.liang.LinkedList.singlelist;
+package du.liang.LinkedList;
+//双向循环链表
+public class CircleLinkedList<E>  extends AbstractList<E> {
 
-import du.liang.LinkedList.AbstractList;
-
-public class CircleSingleLinkedList<E>  extends AbstractList<E> {
-
-    private Node firstNode;
+    private Node<E> firstNode;
+    private Node<E> lastNode;
+    //Josephus Problem
+    Node current ;
+    public void reset(){
+        current=firstNode;
+    }
+    public E next(){
+        if (current==null) return null;
+        E result= (E) current.elementE;
+        current=current.next;
+        return result;
+    }
+    E kill(){
+        if (current==null) return null;
+        E result= (E) current.elementE;
+        int index=0;
+        Node x=firstNode;
+        while (x!=current){
+            index++;
+            x=x.next;
+        }
+        current=current.next;
+        this.remove(index);
+        return result;
+    }
     private static class Node<E>{
         E elementE;
-        Node next;
+        Node<E> prev;
+        Node<E> next;
 
-        public Node(E elementE, Node next) {
+        public Node(E elementE, Node<E> prev,Node<E> next) {
             this.elementE = elementE;
+            this.prev= prev;
             this.next = next;
 
         }
 
         @Override
         public String toString() {
-            StringBuilder sb=new StringBuilder();
-            sb.append(elementE).append("_").append(next.elementE);
+            StringBuilder sb = new StringBuilder();
+//            if(prev!=null){
+//                sb.append(prev.elementE);
+//            }else {
+//                sb.append("null");
+//            }
+//            sb.append("_").append(elementE).append("_");
+//            if(next!=null){
+//                sb.append(next.elementE);
+//            }else {
+//                sb.append("null");
+//            }
+            sb.append(elementE);
             return sb.toString();
         }
     }
@@ -30,6 +66,7 @@ public class CircleSingleLinkedList<E>  extends AbstractList<E> {
     public void clear() {
         size=0;
         firstNode = null;
+        lastNode = null;
 
     }
 
@@ -110,40 +147,60 @@ public class CircleSingleLinkedList<E>  extends AbstractList<E> {
      */
     @Override
     public void add(int index, E element) {
+        rangeCheckForAdd(index);
+//        往最后面添加元素
+        if(index==size){
+            Node oldlast=lastNode;
+            lastNode=new Node<>(element,lastNode,firstNode);
+            if(oldlast==null){//添加第一个节点
+                firstNode=lastNode;
+                firstNode.prev=firstNode;
+                firstNode.next=firstNode;
 
-        if (index==0){
+            }else{
+                oldlast.next=lastNode;
+                firstNode.prev=lastNode;
+            }
 
-            Node<E> node= new Node<E>(element,firstNode);
-            Node<E> LastNode=(size==0)?node:findNode(size-1);
-            firstNode=node;
-            LastNode.next=firstNode;
+        }else {//往头部添加节点
+            Node<E> NextNode= findNode(index);
+            Node<E> PrevNode=NextNode.prev;
+            Node<E> NewNode=new Node<>(element,PrevNode,NextNode);
+            NextNode.prev=NewNode;
+            PrevNode.next=NextNode;
 
-        }else {
-
-            Node<E> previous= findNode(index-1);
-
-
-            Node<E> newNode=new Node<E>(element,previous.next);
-            previous.next=newNode;
-//            newNode.next=firstNode;
-
+            if (index==0){
+                firstNode=NewNode;
+            }
         }
-
-
         size++;
     }
 
     //找到index位置所对应的节点
     private Node<E> findNode(int index){
-        rangeCheck(index);
-        Node presentNode=firstNode;
-        int n=0;
-        while (n<index){
-            if(presentNode.next!=null){
-                presentNode=presentNode.next;
+        rangeCheckForAdd(index);
+        Node presentNode;
+        if(index<(size>>1)){
+            int n=0;
+            presentNode=firstNode;
+            while (n<index){
+                if(presentNode.next!=null){
+                    presentNode=presentNode.next;
+                }
+                n++;
             }
-            n++;
+        }else {
+            int n=size-1;
+            presentNode=lastNode;
+            while (n>index){
+                if(presentNode.prev!=null){
+                    presentNode=presentNode.prev;
+                }
+                n--;
+            }
+
         }
+
         return presentNode;
     }
 
@@ -156,21 +213,26 @@ public class CircleSingleLinkedList<E>  extends AbstractList<E> {
     @Override
     public E remove(int index) {
         rangeCheck(index);
-        Node <E> old=firstNode;
-        if(index==0){
-            if(size==1){
-                firstNode=null;
-            }else {
-                Node lastnode=findNode(size-1);
-                firstNode=firstNode.next;
-                lastnode.next=firstNode;
-            }
-
+        Node<E> old = findNode(index);
+        if(size==1){
+            firstNode=null;
+            lastNode=null;
         }else {
-            Node prev=findNode(index-1);
-            old =prev.next;
-            prev.next=old.next;
+            Node prev = old.prev;
+            Node next = old.next;
+            if (index == 0) {
+                firstNode = next;
 
+            } else {
+                prev.next = next;
+            }
+            if (index == size - 1) {//index==size-1
+                lastNode = prev;
+
+
+            } else {
+                next.prev = prev;
+            }
         }
         size--;
         return old.elementE;
