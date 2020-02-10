@@ -2,33 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e627a289-c38a-4aee-90a2-4129f89fa6f4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/dllll.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/du/liang/LinkedList/CircleLinkedList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/du/liang/Stack/Stack.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/du/liang/Stack/main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/数据结构代码/META-INF/数据结构代码.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/数据结构代码/du/liang/BigO/main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/数据结构代码/du/liang/BigO/main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/数据结构代码/du/liang/LinkedList/AbstractList.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/数据结构代码/du/liang/LinkedList/AbstractList.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/数据结构代码/du/liang/LinkedList/LinkedList$Node.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/数据结构代码/du/liang/LinkedList/LinkedList$Node.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/数据结构代码/du/liang/LinkedList/LinkedList.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/数据结构代码/du/liang/LinkedList/LinkedList.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/数据结构代码/du/liang/LinkedList/List.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/数据结构代码/du/liang/LinkedList/List.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/数据结构代码/du/liang/LinkedList/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/数据结构代码/du/liang/LinkedList/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/数据结构代码/du/liang/Sort/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/数据结构代码/du/liang/Sort/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/数据结构代码/du/liang/Sort/tools/Asserts.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/数据结构代码/du/liang/Sort/tools/Asserts.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/数据结构代码/du/liang/Sort/tools/Integers.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/数据结构代码/du/liang/Sort/tools/Integers.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/数据结构代码/du/liang/Sort/tools/Times$Task.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/数据结构代码/du/liang/Sort/tools/Times$Task.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/数据结构代码/du/liang/Sort/tools/Times.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/数据结构代码/du/liang/Sort/tools/Times.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/数据结构代码/du/liang/linearlist/ArrayList.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/数据结构代码/du/liang/linearlist/ArrayList.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/数据结构代码/du/liang/linearlist/array.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/数据结构代码/du/liang/linearlist/array.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/数据结构代码/du/liang/tools/Asserts.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/数据结构代码/du/liang/tools/Asserts.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/数据结构代码/du/liang/tools/Integers.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/数据结构代码/du/liang/tools/Integers.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/数据结构代码/du/liang/tools/Times$Task.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/数据结构代码/du/liang/tools/Times$Task.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/数据结构代码/du/liang/tools/Times.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/数据结构代码/du/liang/tools/Times.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/du/liang/LinkedList/AbstractList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/du/liang/LinkedList/AbstractList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/du/liang/LinkedList/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/du/liang/LinkedList/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/du/liang/LinkedList/singlelist/CircleSingleLinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/du/liang/LinkedList/singlelist/CircleSingleLinkedList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/du/liang/Sort/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/du/liang/Sort/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -112,7 +88,7 @@
       <recent name="C:\Users\L\Desktop\coding\数据结构代码\src\du\liang\Sort\tools" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="du.liang.LinkedList.Main" />
       <module name="数据结构代码" />
@@ -126,8 +102,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="du.liang.Stack.main" />
+      <module name="数据结构代码" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="du.liang.Stack.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.main" />
         <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
@@ -174,7 +164,7 @@
       <workItem from="1580310355208" duration="1698000" />
       <workItem from="1580317550732" duration="2346000" />
       <workItem from="1581184516380" duration="1579000" />
-      <workItem from="1581296435616" duration="9664000" />
+      <workItem from="1581296435616" duration="12369000" />
     </task>
     <task id="LOCAL-00001" summary="2020年1月6日 21:35:08">
       <created>1578317714327</created>
@@ -260,7 +250,21 @@
       <option name="project" value="LOCAL" />
       <updated>1578920073671</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="单项循环链表add完成，该写remove方法。2020年1月13日 20:54:26">
+      <created>1581327665577</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1581327665577</updated>
+    </task>
+    <task id="LOCAL-00014" summary="约瑟夫问题BUG&#10;Exception in thread &quot;main&quot; java.lang.IndexOutOfBoundsException: size= 4 but index=4&#10;&#9;at du.liang.LinkedList.AbstractList.rangeCheck(AbstractList.java:8)&#10;&#9;at du.liang.LinkedList.CircleLinkedList.remove(CircleLinkedList.java:215)&#10;&#9;at du.liang.LinkedList.CircleLinkedList.kill(CircleLinkedList.java:28)&#10;&#9;at du.liang.LinkedList.Main.main(Main.java:17)">
+      <created>1581327811439</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1581327811439</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -289,7 +293,8 @@
     <MESSAGE value="双向链表 2020年1月12日 16:40:10" />
     <MESSAGE value="双向链表完成 2020年1月12日 21:19:06" />
     <MESSAGE value="单项循环链表add完成，该写remove方法。2020年1月13日 20:54:26" />
-    <option name="LAST_COMMIT_MESSAGE" value="单项循环链表add完成，该写remove方法。2020年1月13日 20:54:26" />
+    <MESSAGE value="约瑟夫问题BUG&#10;Exception in thread &quot;main&quot; java.lang.IndexOutOfBoundsException: size= 4 but index=4&#10;&#9;at du.liang.LinkedList.AbstractList.rangeCheck(AbstractList.java:8)&#10;&#9;at du.liang.LinkedList.CircleLinkedList.remove(CircleLinkedList.java:215)&#10;&#9;at du.liang.LinkedList.CircleLinkedList.kill(CircleLinkedList.java:28)&#10;&#9;at du.liang.LinkedList.Main.main(Main.java:17)" />
+    <option name="LAST_COMMIT_MESSAGE" value="约瑟夫问题BUG&#10;Exception in thread &quot;main&quot; java.lang.IndexOutOfBoundsException: size= 4 but index=4&#10;&#9;at du.liang.LinkedList.AbstractList.rangeCheck(AbstractList.java:8)&#10;&#9;at du.liang.LinkedList.CircleLinkedList.remove(CircleLinkedList.java:215)&#10;&#9;at du.liang.LinkedList.CircleLinkedList.kill(CircleLinkedList.java:28)&#10;&#9;at du.liang.LinkedList.Main.main(Main.java:17)" />
   </component>
   <component name="WindowStateProjectService">
     <state x="2362" y="-159" width="1092" height="765" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1579527931065">
@@ -307,10 +312,10 @@
     </state>
     <state x="2780" y="91" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.1536.824/1920.-346.2048.1112@1920.-346.2048.1112" timestamp="1579527948774" />
     <state x="806" y="409" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1578212774012" />
-    <state x="242" y="-1323" width="1224" height="822" key="CommitChangelistDialog2" timestamp="1581327663810">
+    <state x="242" y="-1323" width="1224" height="822" key="CommitChangelistDialog2" timestamp="1581327810075">
       <screen x="-355" y="-1440" width="2048" height="1112" />
     </state>
-    <state x="242" y="-1323" key="CommitChangelistDialog2/0.0.1536.824/-355.-1440.2048.1112@-355.-1440.2048.1112" timestamp="1581327663810" />
+    <state x="242" y="-1323" key="CommitChangelistDialog2/0.0.1536.824/-355.-1440.2048.1112@-355.-1440.2048.1112" timestamp="1581327810075" />
     <state x="560" y="109" width="1224" height="822" key="CommitChangelistDialog2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1578920072707" />
     <state x="761" y="342" key="FileChooserDialogImpl" timestamp="1578645142978">
       <screen x="0" y="0" width="1920" height="1040" />
@@ -324,46 +329,46 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="707" y="231" key="Github.UntrackedFilesDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1578305662522" />
-    <state width="2005" height="223" key="GridCell.Tab.0.bottom" timestamp="1581325819373">
+    <state width="2005" height="285" key="GridCell.Tab.0.bottom" timestamp="1581330503281">
       <screen x="-355" y="-1440" width="2048" height="1112" />
     </state>
     <state width="2005" height="384" key="GridCell.Tab.0.bottom/0.0.1536.824/-286.-1440.2048.1112@-286.-1440.2048.1112" timestamp="1579920095018" />
     <state width="2005" height="292" key="GridCell.Tab.0.bottom/0.0.1536.824/-338.-1440.2048.1112@-338.-1440.2048.1112" timestamp="1580319181930" />
     <state width="1493" height="292" key="GridCell.Tab.0.bottom/0.0.1536.824/-338.-1440.2048.1112@0.0.1536.824" timestamp="1580625562289" />
-    <state width="2005" height="223" key="GridCell.Tab.0.bottom/0.0.1536.824/-355.-1440.2048.1112@-355.-1440.2048.1112" timestamp="1581325819373" />
+    <state width="2005" height="285" key="GridCell.Tab.0.bottom/0.0.1536.824/-355.-1440.2048.1112@-355.-1440.2048.1112" timestamp="1581330503281" />
     <state width="2004" height="305" key="GridCell.Tab.0.bottom/0.0.1536.824/1920.-346.2048.1112@1920.-346.2048.1112" timestamp="1579534160118" />
     <state width="1493" height="305" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1579613612142" />
     <state width="1877" height="275" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1578920076512" />
     <state width="1877" height="348" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1578312385637" />
-    <state width="2005" height="223" key="GridCell.Tab.0.center" timestamp="1581325819372">
+    <state width="2005" height="285" key="GridCell.Tab.0.center" timestamp="1581330503281">
       <screen x="-355" y="-1440" width="2048" height="1112" />
     </state>
     <state width="2005" height="384" key="GridCell.Tab.0.center/0.0.1536.824/-286.-1440.2048.1112@-286.-1440.2048.1112" timestamp="1579920095018" />
     <state width="2005" height="292" key="GridCell.Tab.0.center/0.0.1536.824/-338.-1440.2048.1112@-338.-1440.2048.1112" timestamp="1580319181929" />
     <state width="1493" height="292" key="GridCell.Tab.0.center/0.0.1536.824/-338.-1440.2048.1112@0.0.1536.824" timestamp="1580625562287" />
-    <state width="2005" height="223" key="GridCell.Tab.0.center/0.0.1536.824/-355.-1440.2048.1112@-355.-1440.2048.1112" timestamp="1581325819372" />
+    <state width="2005" height="285" key="GridCell.Tab.0.center/0.0.1536.824/-355.-1440.2048.1112@-355.-1440.2048.1112" timestamp="1581330503281" />
     <state width="2004" height="305" key="GridCell.Tab.0.center/0.0.1536.824/1920.-346.2048.1112@1920.-346.2048.1112" timestamp="1579534160118" />
     <state width="1493" height="305" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1579613612142" />
     <state width="1877" height="275" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1578920076512" />
     <state width="1877" height="348" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1578312385636" />
-    <state width="2005" height="223" key="GridCell.Tab.0.left" timestamp="1581325819372">
+    <state width="2005" height="285" key="GridCell.Tab.0.left" timestamp="1581330503281">
       <screen x="-355" y="-1440" width="2048" height="1112" />
     </state>
     <state width="2005" height="384" key="GridCell.Tab.0.left/0.0.1536.824/-286.-1440.2048.1112@-286.-1440.2048.1112" timestamp="1579920095018" />
     <state width="2005" height="292" key="GridCell.Tab.0.left/0.0.1536.824/-338.-1440.2048.1112@-338.-1440.2048.1112" timestamp="1580319181929" />
     <state width="1493" height="292" key="GridCell.Tab.0.left/0.0.1536.824/-338.-1440.2048.1112@0.0.1536.824" timestamp="1580625562285" />
-    <state width="2005" height="223" key="GridCell.Tab.0.left/0.0.1536.824/-355.-1440.2048.1112@-355.-1440.2048.1112" timestamp="1581325819372" />
+    <state width="2005" height="285" key="GridCell.Tab.0.left/0.0.1536.824/-355.-1440.2048.1112@-355.-1440.2048.1112" timestamp="1581330503281" />
     <state width="2004" height="305" key="GridCell.Tab.0.left/0.0.1536.824/1920.-346.2048.1112@1920.-346.2048.1112" timestamp="1579534160118" />
     <state width="1493" height="305" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1579613612142" />
     <state width="1877" height="275" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1578920076512" />
     <state width="1877" height="348" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1578312385636" />
-    <state width="2005" height="223" key="GridCell.Tab.0.right" timestamp="1581325819373">
+    <state width="2005" height="285" key="GridCell.Tab.0.right" timestamp="1581330503281">
       <screen x="-355" y="-1440" width="2048" height="1112" />
     </state>
     <state width="2005" height="384" key="GridCell.Tab.0.right/0.0.1536.824/-286.-1440.2048.1112@-286.-1440.2048.1112" timestamp="1579920095018" />
     <state width="2005" height="292" key="GridCell.Tab.0.right/0.0.1536.824/-338.-1440.2048.1112@-338.-1440.2048.1112" timestamp="1580319181930" />
     <state width="1493" height="292" key="GridCell.Tab.0.right/0.0.1536.824/-338.-1440.2048.1112@0.0.1536.824" timestamp="1580625562288" />
-    <state width="2005" height="223" key="GridCell.Tab.0.right/0.0.1536.824/-355.-1440.2048.1112@-355.-1440.2048.1112" timestamp="1581325819373" />
+    <state width="2005" height="285" key="GridCell.Tab.0.right/0.0.1536.824/-355.-1440.2048.1112@-355.-1440.2048.1112" timestamp="1581330503281" />
     <state width="2004" height="305" key="GridCell.Tab.0.right/0.0.1536.824/1920.-346.2048.1112@1920.-346.2048.1112" timestamp="1579534160118" />
     <state width="1493" height="305" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1579613612142" />
     <state width="1877" height="275" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1578920076512" />
@@ -425,9 +430,10 @@
       <screen x="-338" y="-1440" width="2048" height="1112" />
     </state>
     <state x="246" y="-1147" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.0.1536.824/-338.-1440.2048.1112@-338.-1440.2048.1112" timestamp="1580318160676" />
-    <state width="943" height="471" key="javadoc.popup.new" timestamp="1578917614664">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1006" height="504" key="javadoc.popup.new" timestamp="1581329322104">
+      <screen x="-355" y="-1440" width="2048" height="1112" />
     </state>
+    <state width="1006" height="504" key="javadoc.popup.new/0.0.1536.824/-355.-1440.2048.1112@-355.-1440.2048.1112" timestamp="1581329322104" />
     <state width="943" height="471" key="javadoc.popup.new/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1578917614664" />
     <state x="334" y="129" key="new project wizard" timestamp="1578645159080">
       <screen x="0" y="0" width="1920" height="1040" />
