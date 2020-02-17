@@ -5,8 +5,10 @@ public class main {
 
         Stack<Integer> Stack=new Stack<>();
         Stack.push(11);
-        Stack.push(11);
-        Stack.push(11);
-        System.out.println(Stack.top());
+        Stack.push(22);
+        Stack.push(33);
+        System.out.println(Stack.pop());
+        System.out.println(Stack.pop());
+        System.out.println(Stack.pop());
     }
 }
