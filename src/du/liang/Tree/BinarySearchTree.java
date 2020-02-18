@@ -1,8 +1,42 @@
 package du.liang.Tree;
 
-public class BinarySearchTree<E> {
+import du.liang.Tree.printer.BinaryTreeInfo;
+
+import java.util.Comparator;
+
+public class BinarySearchTree<E> implements BinaryTreeInfo {
     private int size=0;
     private Node<E> root;
+    private Comparator<E> comparator;
+
+    public BinarySearchTree() {
+        this.comparator=null;
+    }
+
+    public BinarySearchTree(Comparator<E> comparator) {
+        this.comparator = comparator;
+    }
+
+    @Override
+    public Object root() {
+        return root;
+    }
+
+    @Override
+    public Object left(Object node) {
+        return ((Node)node).left;
+    }
+
+    @Override
+    public Object right(Object node) {
+        return ((Node)node).right;
+    }
+
+    @Override
+    public Object string(Object node) {
+        return ((Node)node).right;
+    }
+
     private class Node<E> {
         E element;
         Node left;
@@ -57,8 +91,13 @@ public class BinarySearchTree<E> {
     * @return 返回值等于0：e1=e2，返回值大于0：e1>e2，
     * 返回值小于0：e1<e2。
     * */
+    @SuppressWarnings("unchecked")
     private int compare(E e1,E e2){
-        return 0;
+        if(comparator!=null){
+            return comparator.compare(e1,e2);
+        }else {
+            return ((Comparable)e1).compareTo(e2);
+        }
     }
     public void remove(E element){
 
