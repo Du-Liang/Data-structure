@@ -8,9 +8,12 @@ import java.util.Queue;
 
 public class BinarySearchTree<E> implements BinaryTreeInfo {
     private int size=0;
-    private Node<E> root;
+    protected Node<E> root;
     private Comparator<E> comparator;
 
+    public BinarySearchTree(Node<E> root) {
+        this.root = root;
+    }
 
     public BinarySearchTree() {
         this.comparator=null;
@@ -40,7 +43,7 @@ public class BinarySearchTree<E> implements BinaryTreeInfo {
         return ((Node<E>)node).element;
     }
 
-    private class Node<E> {
+    class Node<E> {
         E element;
         Node left;
         Node right;
@@ -54,6 +57,19 @@ public class BinarySearchTree<E> implements BinaryTreeInfo {
         }
         public boolean hasTwoChildren(){
             return this.right!=null&&this.left!=null;
+        }
+        public boolean isLeftChild(){
+            if(parent!=null&&this==this.parent.left){
+                return true;
+            }else
+                return false;
+        }
+
+        public boolean isRightChild(){
+            if(parent!=null&&this==this.parent.right){
+                return true;
+            }else
+                return false;
         }
     }
     public int size(){
@@ -71,8 +87,9 @@ public class BinarySearchTree<E> implements BinaryTreeInfo {
         elementNotNullCheak(element);
         //添加第一个节点（根节点）
         if(root==null){
-            root=new Node<>(element,null);
+            root=createNode(element,null) ;
             size++;
+            afterAdd(root);
             return;
         }
         //添加的不是第一个节点（非根节点）
@@ -91,14 +108,24 @@ public class BinarySearchTree<E> implements BinaryTreeInfo {
                 return;
             }
         }
-
+        Node<E> newNode=createNode(element,parent);
         if(cmp>0){
-            parent.right=new Node<E>(element,parent);
+            parent.right=newNode;
         }else {
-            parent.left=new Node<E>(element,parent);
+            parent.left=newNode;
         }
+        afterAdd(newNode);
         size++;
     }
+
+    protected Node<E> createNode(E element,Node parent){
+        return new Node<>(element,parent);
+    }
+/**
+ *添加node之后的调整
+ * node：新添加的节点
+ */
+    protected void afterAdd(Node<E> node){}
     /*
     * @return 返回值等于0：e1=e2，返回值大于0：e1>e2，
     * 返回值小于0：e1<e2。
@@ -111,7 +138,67 @@ public class BinarySearchTree<E> implements BinaryTreeInfo {
         }
     }
     public void remove(E element){
+        remove(node(element));
+    }
+    private void remove(Node node){
+        if(node==null)return;
+        size--;
+        if(node.hasTwoChildren()){//度为2的节点
+            Node s=successor(node);//找到后继节点
+            node.element=s.element;//用后继节点覆盖度为2节点的值
+            node=s;//后序只要删除node即可
+        }
+        //删除node节点（node节点的度必然为1或者0）
+        Node<E> replacement = node.left!=null?node.left:node.right;
+        if(replacement!=null){//表明要删除的节点是度为1的节点
+            replacement.parent=node.parent;
+            if(node.parent==null){
+                root=replacement;
+            }else if(node==node.parent.left){
+                node.parent.left=replacement;
+            }else {
+                node.parent.right=replacement;
+            }
+            node=null;
+        }else if(node.parent==null){//要删除的节点是根节点
+            root=null;
+        }else {//要删除的节点是叶子节点
+            if(node==node.parent.left){
+                node.parent.left=replacement;
+            }else {
+                node.parent.right=replacement;
+            }
+            node=null;
 
+        }
+//        if(node.left==null&&node.right==null){//度为0的节点
+//            if(node==root){
+//                node=null;
+//            }else if(node==node.parent.left){
+//                node.parent.left=null;
+//            }else {
+//                node.parent.right=null;
+//            }
+//        }else {//度为1的节点
+//            if (node.left!=null){
+//                Node child=node.left;
+//
+//            }else {
+//                Node child=node.right;
+//            }
+//        }
+
+    }
+    private Node<E> node(E element){//compare
+        if(root==null)return null;
+        Node node=root;
+        while (node!=null){
+            int cmp=compare(element,(E)node.element);
+            if(cmp==0)return node;
+            if(cmp>0)node=node.right;
+            else node=node.left;
+        }
+        return null;
     }
     public boolean contain(E element){
         return false;
@@ -312,5 +399,48 @@ public class BinarySearchTree<E> implements BinaryTreeInfo {
         }
         return true;
     }
+    public BinarySearchTree invertTree(){
+        return invertTree(root);
+    }
+     private BinarySearchTree invertTree(Node root) {
+        if(root==null)return null;
+         invertTree(root.left);
+         invertTree(root.right);
+         Node tem=root.left;
+         root.left=root.right;
+         root.right=tem;
+         return new BinarySearchTree(root);
+    }
+    private Node predecessor(Node node){
+        if(node==null)return null;
+        if(node.left!=null){
+            node=node.left;
+            while (node.right!=null){
+                node=node.right;
+            }
+            return node;
+        }else {
+            while (node.parent!=null&&node==node.parent.left){
+                node=node.parent;
+            }
+            return node.parent;
+        }
+    }
+    private Node successor(Node node){
+        if(node==null)return null;
+        if(node.right!=null){
+            node=node.right;
+            while (node.left!=null){
+                node=node.left;
+            }
+            return node;
+        }else {
+            while (node.parent!=null&&node==node.parent.right){
+                node=node.parent;
+            }
+            return node.parent;
+        }
+    }
+
 
 }

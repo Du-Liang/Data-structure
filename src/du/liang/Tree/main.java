@@ -6,7 +6,7 @@ import java.util.Comparator;
 
 public class main {
     static Integer data[]=new Integer[]{
-            7,4,2,1,3,5,9,8,11,10,12,
+            13,14,15,12,11,17,16,8,9,1
     };
     private static class PersonComparator implements Comparator<Person>{
 
@@ -54,63 +54,17 @@ public class main {
     }
     static void test3(){
         Integer data[]=new Integer[]{
-                7,4,2,1,9,
+                13,14,15,12,11,17,16,8,9,1
 //                7,4,9,2,5,9,99
         };
-        BinarySearchTree<Integer> bst=new BinarySearchTree<>();
+        BinarySearchTree<Integer> bst=new AVLTree<>();
         for (int i = 0; i < data.length; i++) {
             bst.add(data[i]);
         }
         BinaryTrees.println(bst);
-        System.out.println(bst.isComplete() );
+        bst.remove(9);
+        BinaryTrees.println(bst);
 
-
-//        System.out.println(bst.height());
-//        System.out.println(bst.height2());
-//        System.out.println("前序：");
-//        a=3;
-//        bst.preorder(new BinarySearchTree.Visitor<Integer>() {
-//            @Override
-//            public boolean visit(Integer element) {
-//                System.out.print((element)+" ");
-//                a--;if (a==0)return true;
-//                return false;
-//            }
-//        });
-//        System.out.println("\n"+"中序：");
-//        a=3;
-//        bst.inorder(new BinarySearchTree.Visitor<Integer>() {
-//            @Override
-//            public boolean visit(Integer element) {
-//                System.out.print((element)+" ");
-//                a--;if (a==0)return true;
-//                return false;
-//
-//            }
-//        });
-//        System.out.println("\n"+"后序：");
-//        a=3;
-//        bst.postorder(new BinarySearchTree.Visitor<Integer>() {
-//
-//            @Override
-//            public boolean visit(Integer element) {
-//
-//                System.out.print((element)+" ");
-//                a--;if (a==0)return true;
-//                return false;
-//            }
-//        });
-//
-//        System.out.println("\n"+"层序:");
-//        a=3;
-//        bst.LevelOrderTraversal(new BinarySearchTree.Visitor<Integer>() {
-//            @Override
-//            public boolean visit(Integer element) {
-//                System.out.print((element)+" ");
-//                a--;if (a==0)return true;
-//                return false;
-//            }
-//        });
     }
     public static int a=3;
     public static void main(String[] args) {
