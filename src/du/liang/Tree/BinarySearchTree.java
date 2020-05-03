@@ -71,6 +71,11 @@ public class BinarySearchTree<E> implements BinaryTreeInfo {
             }else
                 return false;
         }
+        public Node<E> sibling(){
+            if(isLeftChild()) return parent.right;
+            if(isRightChild()) return parent.left;
+            return null;
+        }
     }
     public int size(){
         return this.size;
@@ -187,6 +192,10 @@ public class BinarySearchTree<E> implements BinaryTreeInfo {
 //                Node child=node.right;
 //            }
 //        }
+
+    }
+
+    protected void afterRemove(){
 
     }
     private Node<E> node(E element){//compare
