@@ -2,6 +2,21 @@ package du.liang.Sort;
 
 import du.liang.Sort.tools.Asserts;
 import du.liang.Sort.tools.Integers;
+
+public class Main {
+    public static void main(String[] args) {
+        Sort s=new HeapSort();
+        s.out();
+        s.sort();
+        s.out();
+    }
+}
+
+
+
+
+
+/*
 //import du.liang.Sort.tools.Times;
 //import org.jetbrains.annotations.NotNull;
 
@@ -89,3 +104,4 @@ public class Main {
 
 
 }
+*/
