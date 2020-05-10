@@ -5,10 +5,12 @@ import du.liang.Sort.tools.Integers;
 
 public class Main {
     public static void main(String[] args) {
-        Sort s=new HeapSort();
+        Sort s=new QuickSort();
+//        Sort s=new BubbleSort();
         s.out();
         s.sort();
         s.out();
+
     }
 }
 

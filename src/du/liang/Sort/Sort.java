@@ -12,6 +12,7 @@ public abstract class Sort {
     }
 
     protected abstract void sort();
+
     /*
     * 0   ==
     * >0 array[i1]>array[i2]
@@ -26,11 +27,12 @@ public abstract class Sort {
         swapCount++;
         tem=array[i1];array[i1]=array[i2];array[i2]=tem;
     }
-    public void out(){
+    public Integer[] out(){
         for (int i:array
              ) {
             System.out.print(i+"\t");
         }
         System.out.println();
+        return array;
     }
 }
