@@ -2,13 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e627a289-c38a-4aee-90a2-4129f89fa6f4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/du/liang/Sort/BinarySearch.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/du/liang/Sort/QuickSort.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/du/liang/BackTracking/eightQueens.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/du/liang/Union/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/du/liang/Union/Student.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/du/liang/greed/CoinChange.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/du/liang/recursion/Fib.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/du/liang/recursion/Hanoi.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/du/liang/recursion/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/du/liang/recursion/TailCall.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/du/liang/recursion/climbStairs.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/数据结构代码/du/liang/Sort/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/数据结构代码/du/liang/Sort/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/du/liang/Sort/InsertionSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/du/liang/Sort/InsertionSort.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/du/liang/Sort/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/du/liang/Sort/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/du/liang/Sort/Sort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/du/liang/Sort/Sort.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,7 +69,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../【瑞客论坛 www.ruike1.com】【完整无密】恋上数据结构与算法（第二季）/课件/1.课件【瑞客论坛 www.ruike1.com】/课堂代码/01-排序" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../编程教程/review(重要！不要删除)/算法代码" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Project" />
@@ -87,13 +90,52 @@
       <recent name="C:\Users\L\Desktop\coding\数据结构代码\src\du\liang\Sort\tools" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Main (1)">
+  <component name="RunManager" selected="Application.CoinChange">
+    <configuration name="CoinChange" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="du.liang.greed.CoinChange" />
+      <module name="数据结构代码" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="du.liang.greed.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Fib" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="du.liang.recursion.Fib" />
+      <module name="数据结构代码" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="du.liang.recursion.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Hanoi" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="du.liang.recursion.Hanoi" />
+      <module name="数据结构代码" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="du.liang.recursion.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="du.liang.Sort.Main" />
+      <option name="MAIN_CLASS_NAME" value="du.liang.recursion.Main" />
       <module name="数据结构代码" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="du.liang.Sort.*" />
+          <option name="PATTERN" value="du.liang.recursion.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -101,12 +143,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="du.liang.LinkedList.Main" />
+    <configuration name="TailCall" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="du.liang.recursion.TailCall" />
       <module name="数据结构代码" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="du.liang.LinkedList.singlelist.*" />
+          <option name="PATTERN" value="du.liang.recursion.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -114,51 +156,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SelectionSort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="du.liang.Sort.SelectionSort" />
+    <configuration name="climbStairs" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="du.liang.recursion.climbStairs" />
       <module name="数据结构代码" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="du.liang.Sort.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="du.liang.Tree.main" />
-      <module name="数据结构代码" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="du.liang.Tree.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="du.liang.Stack.main" />
-      <module name="数据结构代码" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="du.liang.Stack.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="du.liang.Tree.main" />
-      <module name="数据结构代码" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="du.liang.Tree.*" />
+          <option name="PATTERN" value="du.liang.recursion.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -168,11 +171,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.CoinChange" />
+        <item itemvalue="Application.TailCall" />
+        <item itemvalue="Application.Hanoi" />
+        <item itemvalue="Application.climbStairs" />
         <item itemvalue="Application.Main (1)" />
-        <item itemvalue="Application.SelectionSort" />
-        <item itemvalue="Application.main (1)" />
-        <item itemvalue="Application.Main" />
-        <item itemvalue="Application.main" />
       </list>
     </recent_temporary>
   </component>
@@ -236,7 +239,13 @@
       <workItem from="1588824477867" duration="13430000" />
       <workItem from="1588990292424" duration="3427000" />
       <workItem from="1589014577088" duration="8732000" />
-      <workItem from="1589084594196" duration="611000" />
+      <workItem from="1589084594196" duration="2570000" />
+      <workItem from="1589112515238" duration="1343000" />
+      <workItem from="1595086359300" duration="404000" />
+      <workItem from="1595126790109" duration="6375000" />
+      <workItem from="1595355221213" duration="11477000" />
+      <workItem from="1595495934067" duration="5608000" />
+      <workItem from="1595572920874" duration="4389000" />
     </task>
     <task id="LOCAL-00001" summary="2020年1月6日 21:35:08">
       <created>1578317714327</created>
@@ -385,7 +394,14 @@
       <option name="project" value="LOCAL" />
       <updated>1588864746994</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="二叉树遍历&#10;2020年2月23日 12:25:19">
+      <created>1589085843979</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1589085843979</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -421,153 +437,85 @@
     <option name="LAST_COMMIT_MESSAGE" value="二叉树遍历&#10;2020年2月23日 12:25:19" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="155" y="-1209" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1595086440158">
+      <screen x="-293" y="-1440" width="1986" height="1152" />
+    </state>
+    <state x="155" y="-1209" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824/-293.-1440.1986.1152@-293.-1440.1986.1152" timestamp="1595086440158" />
     <state x="826" y="-1077" key="#com.intellij.ide.util.MemberChooser" timestamp="1588990635793">
       <screen x="-293" y="-1440" width="1986" height="1152" />
     </state>
     <state x="826" y="-1077" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824/-293.-1440.1986.1152@-293.-1440.1986.1152" timestamp="1588990635793" />
-    <state x="799" y="-1090" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824/-355.-1440.2048.1112@-355.-1440.2048.1112" timestamp="1582812395781" />
-    <state x="866" y="243" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824/-355.-1440.2048.1112@0.0.1536.824" timestamp="1582794078813" />
-    <state x="799" y="-1077" key="#com.intellij.ide.util.MemberChooser/0.0.1536.864/-355.-1440.2048.1152@-355.-1440.2048.1152" timestamp="1583390084077" />
-    <state x="400" y="-1137" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1582035765878">
-      <screen x="-355" y="-1440" width="2048" height="1112" />
-    </state>
-    <state x="400" y="-1137" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824/-355.-1440.2048.1112@-355.-1440.2048.1112" timestamp="1582035765878" />
-    <state x="400" y="-1137" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog" timestamp="1581907556740">
-      <screen x="-355" y="-1440" width="2048" height="1112" />
-    </state>
-    <state x="400" y="-1137" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog/0.0.1536.824/-355.-1440.2048.1112@-355.-1440.2048.1112" timestamp="1581907556740" />
-    <state x="-293" y="-1440" width="1986" height="1152" key="CommitChangelistDialog2" timestamp="1588864745766">
-      <screen x="-293" y="-1440" width="1986" height="1152" />
+    <state x="0" y="40" width="1986" height="1152" key="CommitChangelistDialog2" timestamp="1589085842954">
+      <screen x="0" y="40" width="2048" height="1112" />
     </state>
     <state x="-293" y="-1440" width="1986" height="1152" key="CommitChangelistDialog2/0.0.1536.824/-293.-1440.1986.1152@-293.-1440.1986.1152" timestamp="1588864745766" />
     <state x="263" y="131" key="CommitChangelistDialog2/0.0.1536.824/-293.-1440.1986.1152@0.0.1536.824" timestamp="1588495240354" />
-    <state x="-5" y="-1263" width="1618" height="856" key="CommitChangelistDialog2/0.0.1536.824/-355.-1440.2048.1112@-355.-1440.2048.1112" timestamp="1582881387598" />
-    <state width="402" height="466" key="DebuggerActiveHint" timestamp="1581331321557">
+    <state x="0" y="40" key="CommitChangelistDialog2/355.1480.1536.824/0.40.2048.1112@0.40.2048.1112" timestamp="1589085842954" />
+    <state x="358" y="46" key="FileChooserDialogImpl" timestamp="1595144074702">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="402" height="466" key="DebuggerActiveHint/0.0.1536.824/-355.-1440.2048.1112@0.0.1536.824" timestamp="1581331321557" />
-    <state x="494" y="-1061" key="FileChooserDialogImpl" timestamp="1588860439096">
-      <screen x="-293" y="-1440" width="1986" height="1152" />
-    </state>
-    <state x="494" y="-1061" key="FileChooserDialogImpl/0.0.1536.824/-293.-1440.1986.1152@-293.-1440.1986.1152" timestamp="1588860439096" />
+    <state x="358" y="46" key="FileChooserDialogImpl/0.0.1536.824/-293.-1440.1986.1152@-293.-1440.1986.1152" timestamp="1595144074702" />
     <state x="609" y="271" key="FileChooserDialogImpl/0.0.1536.824/-293.-1440.1986.1152@0.0.1536.824" timestamp="1588765074393" />
-    <state x="457" y="-1074" key="FileChooserDialogImpl/0.0.1536.824/-355.-1440.2048.1112@-355.-1440.2048.1112" timestamp="1581724990825" />
-    <state width="2005" height="393" key="GridCell.Tab.-1.bottom" timestamp="1582198513767">
-      <screen x="-355" y="-1440" width="2048" height="1112" />
+    <state width="1537" height="226" key="GridCell.Tab.0.bottom" timestamp="1595585000779">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="2005" height="393" key="GridCell.Tab.-1.bottom/0.0.1536.824/-355.-1440.2048.1112@-355.-1440.2048.1112" timestamp="1582198513767" />
-    <state width="2005" height="393" key="GridCell.Tab.-1.center" timestamp="1582198513767">
-      <screen x="-355" y="-1440" width="2048" height="1112" />
-    </state>
-    <state width="2005" height="393" key="GridCell.Tab.-1.center/0.0.1536.824/-355.-1440.2048.1112@-355.-1440.2048.1112" timestamp="1582198513767" />
-    <state width="2005" height="393" key="GridCell.Tab.-1.left" timestamp="1582198513767">
-      <screen x="-355" y="-1440" width="2048" height="1112" />
-    </state>
-    <state width="2005" height="393" key="GridCell.Tab.-1.left/0.0.1536.824/-355.-1440.2048.1112@-355.-1440.2048.1112" timestamp="1582198513767" />
-    <state width="2005" height="393" key="GridCell.Tab.-1.right" timestamp="1582198513767">
-      <screen x="-355" y="-1440" width="2048" height="1112" />
-    </state>
-    <state width="2005" height="393" key="GridCell.Tab.-1.right/0.0.1536.824/-355.-1440.2048.1112@-355.-1440.2048.1112" timestamp="1582198513767" />
-    <state width="979" height="335" key="GridCell.Tab.0.bottom" timestamp="1589081908777">
-      <screen x="0" y="40" width="2048" height="1112" />
-    </state>
-    <state width="1126" height="335" key="GridCell.Tab.0.bottom/0.0.1536.824/-293.-1440.1986.1152@-293.-1440.1986.1152" timestamp="1589019882384" />
-    <state width="723" height="425" key="GridCell.Tab.0.bottom/0.0.1536.824/-293.-1440.1986.1152@0.0.1536.824" timestamp="1588938319676" />
-    <state width="1493" height="292" key="GridCell.Tab.0.bottom/0.0.1536.824/-338.-1440.2048.1112@0.0.1536.824" timestamp="1580625562289" />
-    <state width="2005" height="638" key="GridCell.Tab.0.bottom/0.0.1536.824/-355.-1440.2048.1112@-355.-1440.2048.1112" timestamp="1582881414958" />
-    <state width="1493" height="168" key="GridCell.Tab.0.bottom/0.0.1536.824/-355.-1440.2048.1112@0.0.1536.824" timestamp="1582793862521" />
+    <state width="1164" height="373" key="GridCell.Tab.0.bottom/0.0.1536.824/-293.-1440.1986.1152@-293.-1440.1986.1152" timestamp="1595510124772" />
+    <state width="1537" height="226" key="GridCell.Tab.0.bottom/0.0.1536.824/-293.-1440.1986.1152@0.0.1536.824" timestamp="1595585000779" />
     <state width="979" height="335" key="GridCell.Tab.0.bottom/355.1480.1536.824/0.40.2048.1112@0.40.2048.1112" timestamp="1589081908777" />
-    <state width="979" height="335" key="GridCell.Tab.0.center" timestamp="1589081908773">
-      <screen x="0" y="40" width="2048" height="1112" />
+    <state width="1537" height="226" key="GridCell.Tab.0.center" timestamp="1595585000778">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1126" height="335" key="GridCell.Tab.0.center/0.0.1536.824/-293.-1440.1986.1152@-293.-1440.1986.1152" timestamp="1589019882383" />
-    <state width="723" height="425" key="GridCell.Tab.0.center/0.0.1536.824/-293.-1440.1986.1152@0.0.1536.824" timestamp="1588938319676" />
-    <state width="1493" height="292" key="GridCell.Tab.0.center/0.0.1536.824/-338.-1440.2048.1112@0.0.1536.824" timestamp="1580625562287" />
-    <state width="2005" height="638" key="GridCell.Tab.0.center/0.0.1536.824/-355.-1440.2048.1112@-355.-1440.2048.1112" timestamp="1582881414958" />
-    <state width="1493" height="168" key="GridCell.Tab.0.center/0.0.1536.824/-355.-1440.2048.1112@0.0.1536.824" timestamp="1582793862521" />
+    <state width="1164" height="373" key="GridCell.Tab.0.center/0.0.1536.824/-293.-1440.1986.1152@-293.-1440.1986.1152" timestamp="1595510124772" />
+    <state width="1537" height="226" key="GridCell.Tab.0.center/0.0.1536.824/-293.-1440.1986.1152@0.0.1536.824" timestamp="1595585000778" />
     <state width="979" height="335" key="GridCell.Tab.0.center/355.1480.1536.824/0.40.2048.1112@0.40.2048.1112" timestamp="1589081908773" />
-    <state width="979" height="335" key="GridCell.Tab.0.left" timestamp="1589081908771">
-      <screen x="0" y="40" width="2048" height="1112" />
+    <state width="1537" height="226" key="GridCell.Tab.0.left" timestamp="1595585000778">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1126" height="335" key="GridCell.Tab.0.left/0.0.1536.824/-293.-1440.1986.1152@-293.-1440.1986.1152" timestamp="1589019882383" />
-    <state width="723" height="425" key="GridCell.Tab.0.left/0.0.1536.824/-293.-1440.1986.1152@0.0.1536.824" timestamp="1588938319676" />
-    <state width="1493" height="292" key="GridCell.Tab.0.left/0.0.1536.824/-338.-1440.2048.1112@0.0.1536.824" timestamp="1580625562285" />
-    <state width="2005" height="638" key="GridCell.Tab.0.left/0.0.1536.824/-355.-1440.2048.1112@-355.-1440.2048.1112" timestamp="1582881414957" />
-    <state width="1493" height="168" key="GridCell.Tab.0.left/0.0.1536.824/-355.-1440.2048.1112@0.0.1536.824" timestamp="1582793862520" />
+    <state width="1164" height="373" key="GridCell.Tab.0.left/0.0.1536.824/-293.-1440.1986.1152@-293.-1440.1986.1152" timestamp="1595510124772" />
+    <state width="1537" height="226" key="GridCell.Tab.0.left/0.0.1536.824/-293.-1440.1986.1152@0.0.1536.824" timestamp="1595585000778" />
     <state width="979" height="335" key="GridCell.Tab.0.left/355.1480.1536.824/0.40.2048.1112@0.40.2048.1112" timestamp="1589081908771" />
-    <state width="979" height="335" key="GridCell.Tab.0.right" timestamp="1589081908775">
-      <screen x="0" y="40" width="2048" height="1112" />
+    <state width="1537" height="226" key="GridCell.Tab.0.right" timestamp="1595585000778">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1126" height="335" key="GridCell.Tab.0.right/0.0.1536.824/-293.-1440.1986.1152@-293.-1440.1986.1152" timestamp="1589019882384" />
-    <state width="723" height="425" key="GridCell.Tab.0.right/0.0.1536.824/-293.-1440.1986.1152@0.0.1536.824" timestamp="1588938319676" />
-    <state width="1493" height="292" key="GridCell.Tab.0.right/0.0.1536.824/-338.-1440.2048.1112@0.0.1536.824" timestamp="1580625562288" />
-    <state width="2005" height="638" key="GridCell.Tab.0.right/0.0.1536.824/-355.-1440.2048.1112@-355.-1440.2048.1112" timestamp="1582881414958" />
-    <state width="1493" height="168" key="GridCell.Tab.0.right/0.0.1536.824/-355.-1440.2048.1112@0.0.1536.824" timestamp="1582793862521" />
+    <state width="1164" height="373" key="GridCell.Tab.0.right/0.0.1536.824/-293.-1440.1986.1152@-293.-1440.1986.1152" timestamp="1595510124772" />
+    <state width="1537" height="226" key="GridCell.Tab.0.right/0.0.1536.824/-293.-1440.1986.1152@0.0.1536.824" timestamp="1595585000778" />
     <state width="979" height="335" key="GridCell.Tab.0.right/355.1480.1536.824/0.40.2048.1112@0.40.2048.1112" timestamp="1589081908775" />
-    <state width="2005" height="393" key="GridCell.Tab.1.bottom" timestamp="1582198510719">
-      <screen x="-355" y="-1440" width="2048" height="1112" />
-    </state>
-    <state width="2005" height="393" key="GridCell.Tab.1.bottom/0.0.1536.824/-355.-1440.2048.1112@-355.-1440.2048.1112" timestamp="1582198510719" />
-    <state width="1493" height="186" key="GridCell.Tab.1.bottom/0.0.1536.824/-355.-1440.2048.1112@0.0.1536.824" timestamp="1581331311511" />
-    <state width="2005" height="393" key="GridCell.Tab.1.center" timestamp="1582198510719">
-      <screen x="-355" y="-1440" width="2048" height="1112" />
-    </state>
-    <state width="2005" height="393" key="GridCell.Tab.1.center/0.0.1536.824/-355.-1440.2048.1112@-355.-1440.2048.1112" timestamp="1582198510719" />
-    <state width="1493" height="186" key="GridCell.Tab.1.center/0.0.1536.824/-355.-1440.2048.1112@0.0.1536.824" timestamp="1581331311511" />
-    <state width="2005" height="393" key="GridCell.Tab.1.left" timestamp="1582198510719">
-      <screen x="-355" y="-1440" width="2048" height="1112" />
-    </state>
-    <state width="2005" height="393" key="GridCell.Tab.1.left/0.0.1536.824/-355.-1440.2048.1112@-355.-1440.2048.1112" timestamp="1582198510719" />
-    <state width="1493" height="186" key="GridCell.Tab.1.left/0.0.1536.824/-355.-1440.2048.1112@0.0.1536.824" timestamp="1581331311511" />
-    <state width="2005" height="393" key="GridCell.Tab.1.right" timestamp="1582198510719">
-      <screen x="-355" y="-1440" width="2048" height="1112" />
-    </state>
-    <state width="2005" height="393" key="GridCell.Tab.1.right/0.0.1536.824/-355.-1440.2048.1112@-355.-1440.2048.1112" timestamp="1582198510719" />
-    <state width="1493" height="186" key="GridCell.Tab.1.right/0.0.1536.824/-355.-1440.2048.1112@0.0.1536.824" timestamp="1581331311511" />
-    <state x="454" y="-1173" key="RollbackChangesDialog" timestamp="1582097148584">
-      <screen x="-355" y="-1440" width="2048" height="1112" />
-    </state>
-    <state x="454" y="-1173" key="RollbackChangesDialog/0.0.1536.824/-355.-1440.2048.1112@-355.-1440.2048.1112" timestamp="1582097148584" />
-    <state x="229" y="-1156" key="Vcs.Push.Dialog.v2" timestamp="1588864750184">
+    <state x="-139" y="-1152" key="NewModule_or_Project.wizard" timestamp="1589113218514">
       <screen x="-293" y="-1440" width="1986" height="1152" />
+    </state>
+    <state x="-139" y="-1152" key="NewModule_or_Project.wizard/0.0.1536.824/-293.-1440.1986.1152@-293.-1440.1986.1152" timestamp="1589113218514" />
+    <state x="538" y="314" key="Vcs.Push.Dialog.v2" timestamp="1589085860853">
+      <screen x="0" y="40" width="2048" height="1112" />
     </state>
     <state x="229" y="-1156" key="Vcs.Push.Dialog.v2/0.0.1536.824/-293.-1440.1986.1152@-293.-1440.1986.1152" timestamp="1588864750184" />
     <state x="404" y="203" key="Vcs.Push.Dialog.v2/0.0.1536.824/-293.-1440.1986.1152@0.0.1536.824" timestamp="1588495244248" />
-    <state x="183" y="-1166" key="Vcs.Push.Dialog.v2/0.0.1536.824/-355.-1440.2048.1112@-355.-1440.2048.1112" timestamp="1582881391728" />
-    <state x="370" y="-1055" key="com.intellij.ide.util.TipDialog" timestamp="1584985545009">
+    <state x="538" y="314" key="Vcs.Push.Dialog.v2/355.1480.1536.824/0.40.2048.1112@0.40.2048.1112" timestamp="1589085860853" />
+    <state x="-297" y="-1136" key="new project wizard" timestamp="1589113066202">
       <screen x="-293" y="-1440" width="1986" height="1152" />
     </state>
-    <state x="370" y="-1055" key="com.intellij.ide.util.TipDialog/0.0.1536.824/-293.-1440.1986.1152@-293.-1440.1986.1152" timestamp="1584985545009" />
-    <state x="328" y="-1073" key="com.intellij.ide.util.TipDialog/0.0.1536.824/-355.-1440.2048.1112@-355.-1440.2048.1112" timestamp="1582694781162" />
-    <state x="513" y="276" key="com.intellij.ide.util.TipDialog/0.0.1536.824/-355.-1440.2048.1112@0.0.1536.824" timestamp="1582990179568" />
-    <state x="513" y="289" key="com.intellij.ide.util.TipDialog/0.0.1536.864/-355.-1440.2048.1152@0.0.1536.864" timestamp="1583386550366" />
-    <state x="438" y="214" width="1079" height="617" key="dock-window-1" timestamp="1582430608440">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="438" y="214" width="1079" height="617" key="dock-window-1/0.0.1536.824/-355.-1440.2048.1112@-355.-1440.2048.1112" timestamp="1582430608440" />
-    <state x="85" y="-817" width="1079" height="648" key="dock-window-1/0.0.1536.824/-355.-1440.2048.1112@0.0.1536.824" timestamp="1582428462664" />
-    <state width="1006" height="504" key="javadoc.popup.new" timestamp="1581329322104">
-      <screen x="-355" y="-1440" width="2048" height="1112" />
-    </state>
-    <state width="1006" height="504" key="javadoc.popup.new/0.0.1536.824/-355.-1440.2048.1112@-355.-1440.2048.1112" timestamp="1581329322104" />
-    <state x="376" y="-1256" key="refactoring.ChangeSignatureDialog" timestamp="1582515505483">
-      <screen x="-355" y="-1440" width="2048" height="1112" />
-    </state>
-    <state x="376" y="-1256" key="refactoring.ChangeSignatureDialog/0.0.1536.824/-355.-1440.2048.1112@-355.-1440.2048.1112" timestamp="1582515505483" />
-    <state x="302" y="-1183" key="run.anything.popup" timestamp="1582880176998">
-      <screen x="-355" y="-1440" width="2048" height="1112" />
-    </state>
-    <state x="302" y="-1183" key="run.anything.popup/0.0.1536.824/-355.-1440.2048.1112@-355.-1440.2048.1112" timestamp="1582880176998" />
-    <state x="295" y="-1146" width="717" height="725" key="search.everywhere.popup" timestamp="1582035468197">
-      <screen x="-355" y="-1440" width="2048" height="1112" />
-    </state>
-    <state x="295" y="-1146" width="717" height="725" key="search.everywhere.popup/0.0.1536.824/-355.-1440.2048.1112@-355.-1440.2048.1112" timestamp="1582035468197" />
+    <state x="-297" y="-1136" key="new project wizard/0.0.1536.824/-293.-1440.1986.1152@-293.-1440.1986.1152" timestamp="1589113066202" />
   </component>
   <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/du/liang/recursion/Fib.java</url>
+          <line>13</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
     <watches-manager>
       <configuration name="Application">
         <watch expression="args" language="JAVA" />
+        <watch expression="n" language="JAVA" />
+        <watch expression="array" language="JAVA" />
       </configuration>
     </watches-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/Data_structure$TailCall.ic" NAME="TailCall Coverage Results" MODIFIED="1595504885335" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>du.liang.recursion.*</FILTER>
+    </SUITE>
   </component>
 </project>
